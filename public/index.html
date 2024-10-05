@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>8 Graus de Network</title>
+</head>
+<body>
+    <div class="container">
+        <h1>8 Graus de Network</h1>
+        <p>Encontre o relacionamento mais próximo entre atores e filmes!</p>
+        <div class="input-group">
+            <label for="atorOrigem">Ator de Origem:</label>
+            <input type="text" id="atorOrigem" list="atoresList">
+            <span id="atorOrigemError" class="error-message"></span>
+            <datalist id="atoresList"></datalist>
+        </div>
+        <div class="input-group">
+            <label for="atorDestino">Ator de Destino:</label>
+            <input type="text" id="atorDestino" list="atoresList">
+            <span id="atorDestinoError" class="error-message"></span>
+        </div>
+        <button id="buscarBtn">Buscar Relacionamento</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
